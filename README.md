@@ -27,7 +27,7 @@ docker run --rm -it \
   -e BOARD \
   -v $MARLIN_FIRMWARE:/home/platformio/build \
   -v $MARLIN_CONFIGURATION:/home/platformio/CustomConfiguration \
-  frealmyr/marlin-build:latest
+  tautologistics/marlin-build:latest
 ```
 
 ### Github Action
@@ -47,7 +47,7 @@ A live example of this setup is available here: https://github.com/frealmyr/3d-l
 | Variable | Description| Required | Default | Example |
 | :--- | :- | :-: | :-: | :--: |
 | BOARD | Platformio default_envs | yes | `""` | `STM32F103RET6_creality` |
-| USE_REPO | Compile using a different git repository | no | `""` | `https://github.com/frealmyr/Marlin` |
+| USE_REPO | Compile using a different git repository | no | `""` | `https://github.com/tautologistics/Marlin` |
 | USE_LATEST | Update to latest Marlin release tag | no | `""` | `true` |
 | USE_TAG | Compile using a specific release tag | no | `""` | `2.0.7.1` |
 | USE_BRANCH | Compile using a branch instead of latest tag | no | `""` | `bugfix-2.0.x` |

@@ -28,7 +28,7 @@ jobs:
             -e BOARD \
             -v $(pwd)/Firmware/Builds/Example1:/home/platformio/build \
             -v $(pwd)/Firmware/Configuration/Example1:/home/platformio/CustomConfiguration \
-            frealmyr/marlin-build:latest
+            tautologistics/marlin-build:latest
 
       - name: Push firmware
         run: |
